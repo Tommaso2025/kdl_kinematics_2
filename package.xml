@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>kdl_kinematics_2</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="tommaso@todo.todo">tommaso</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>pluginlib</depend>
+  <depend>rclpy</depend>
+  <depend>random_numbers</depend>
+  <depend>moveit_msgs</depend>
+  <depend>moveit_core</depend>
+  <depend>moveit_kinematics</depend>
+  <depend>kdl_parser</depend>
+  <depend>tf2_kdl</depend>
+  <depend>class_loader</depend>
+  <depend>geometry_msgs</depend>
+  <depend>generate_parameter_library</depend>
+  <depend>moveit_ros_planning</depend>
+  <depend>orocos_kdl</depend>
+  <depend>Eigen3</depend>
+  
+  
+  
+  
+  <depend>moveit_common</depend>
+
+  <depend>tf2</depend>
+  <depend>orocos_kdl_vendor</depend>
+  <depend>rsl</depend>
+  
+  <!-- some requirements of ikfast scripts -->
+  <exec_depend>urdfdom</exec_depend> <!-- provides check_urdf -->
+  <exec_depend>python3-lxml</exec_depend>
+
+  <test_depend>moveit_resources_fanuc_description</test_depend>
+  <test_depend>moveit_resources_fanuc_moveit_config</test_depend>
+  <test_depend>moveit_resources_panda_description</test_depend>
+  <test_depend>moveit_resources_panda_moveit_config</test_depend>
+
+  <test_depend>ament_cmake_gtest</test_depend>
+  <test_depend>ros_testing</test_depend>
+  <test_depend>moveit_configs_utils</test_depend>
+  <test_depend>launch_param_builder</test_depend>
+  
+  
+  
+  
+  
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <moveit_core plugin="${prefix}/kdl_kinematics_2_description.xml"/>
+  </export>
+</package>
